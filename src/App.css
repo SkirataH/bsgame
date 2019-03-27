@@ -31,3 +31,8 @@
     transform: rotate(360deg);
   }
 }
+@import url("../src/styles/navbar.scss");
+@import url("../src/styles/fields.css");
+@import url("../src/styles/cells.css");
+@import url("../src/styles/main.css");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Chettan|Roboto");

@@ -1,0 +1,12 @@
+.singleCell {
+  width: 50px;
+  height: 50px;
+  background: lightblue;
+  border: 1px solid #000;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 15%;
+}
+.singleCell:hover {
+  cursor: pointer;
+}

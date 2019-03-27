@@ -1,0 +1,33 @@
+.topMenu {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #016579;
+}
+.topMenu_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+}
+.topMenu_items {
+  display: inline-block;
+  padding-left: 20px;
+}
+.topMenu_items:first-of-type {
+  padding-left: 0;
+}
+.topMenu_items > a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+}
+.topMenu_items > a:hover {
+  border: 2px solid orangered;
+  color: orangered;
+}
