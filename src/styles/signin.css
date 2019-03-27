@@ -13,8 +13,6 @@
   max-height: 250px;
   max-width: 400px;
   padding: 50px 20px;
-  border: 1px solid orangered;
-  background-color: #016563;
 }
 .signIn_main input,
 .signIn_main button {
@@ -36,7 +34,6 @@
 }
 .signIn_main input {
   min-width: 350px;
-  padding-left: 10px;
 }
 .signIn_main button {
   min-width: 370px;
@@ -44,7 +41,6 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   cursor: pointer;
-
   background-color: #016579;
   color: #fff;
 }

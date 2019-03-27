@@ -8,11 +8,12 @@
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+  max-height: 203px;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  top: 50%;
+  top: 0;
   margin: auto;
   font-size: 5em;
   transition: 1s;

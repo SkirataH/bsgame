@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Router, Route, Link, Switch } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
 import createHistory from "history/createBrowserHistory";
 import Field from "./field";
 import Home from "./home";
@@ -9,13 +9,11 @@ class MainRoute extends Component {
   render() {
     return (
       <Router history={createHistory()}>
-        <div>
-          <Switch>
-            <Route path="/game" component={Field} exact />
-            <Route path="/" component={Home} exact />
-            <Route path="/sign-in" component={SignIn} exact />
-          </Switch>
-        </div>
+        <Switch>
+          <Route path="/game" component={Field} exact />
+          <Route path="/" component={Home} exact />
+          <Route path="/sign-in" component={SignIn} exact />
+        </Switch>
       </Router>
     );
   }
