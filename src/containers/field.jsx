@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Cell from "../components/cell";
+import Navbar from "../components/navbar";
 
 class Field extends Component {
   state = {
@@ -84,27 +85,36 @@ class Field extends Component {
   render() {
     return (
       <div className="playField">
-        <div className="myField">
-          {this.state.cells.map(cell => (
-            <Cell
-              ship={cell.ship}
-              key={cell.id}
-              id={cell.id}
-              onHit={this.handleClick}
-              hit={cell.hit}
-            />
-          ))}
-        </div>
-        <div className="myField">
-          {this.state.ecells.map(cell => (
-            <Cell
-              ship={cell.ship}
-              key={cell.id}
-              id={cell.id}
-              onHit={this.handleEnemyClick}
-              hit={cell.hit}
-            />
-          ))}
+        <Navbar />
+        <div className="wrapper">
+          <div className="lesser_wrap">
+            <h2>Your Field</h2>
+            <div className="myField">
+              {this.state.cells.map(cell => (
+                <Cell
+                  ship={cell.ship}
+                  key={cell.id}
+                  id={cell.id}
+                  onHit={this.handleClick}
+                  hit={cell.hit}
+                />
+              ))}
+            </div>
+          </div>
+          <div className="lesser_wrap">
+            <h2>Enemy Field</h2>
+            <div className="myField">
+              {this.state.ecells.map(cell => (
+                <Cell
+                  ship={cell.ship}
+                  key={cell.id}
+                  id={cell.id}
+                  onHit={this.handleEnemyClick}
+                  hit={cell.hit}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     );

@@ -1,0 +1,50 @@
+.signIn_main {
+  background-color: #016579;
+  min-height: 100vh;
+  position: relative;
+}
+.signIn_main form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-height: 250px;
+  max-width: 400px;
+  padding: 50px 20px;
+  border: 1px solid orangered;
+  background-color: #016563;
+}
+.signIn_main input,
+.signIn_main button {
+  display: block;
+  min-height: 40px;
+  font-size: 30px;
+  border: 3px solid #fff;
+  margin: 20px auto;
+  transition: 0.5s;
+  border-radius: 10px;
+  text-align: center;
+}
+.signIn_main input:focus,
+.signIn_main button:hover {
+  border: 3px solid orangered;
+}
+.signIn_main button:hover {
+  color: orangered;
+}
+.signIn_main input {
+  min-width: 350px;
+  padding-left: 10px;
+}
+.signIn_main button {
+  min-width: 370px;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  background-color: #016579;
+  color: #fff;
+}
